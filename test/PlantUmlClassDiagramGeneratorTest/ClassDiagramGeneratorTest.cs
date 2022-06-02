@@ -125,7 +125,7 @@ namespace PlantUmlClassDiagramGeneratorTest
             using (var writer = new StringWriter(output))
             {
                 var gen = new ClassDiagramGenerator(writer, "    ", Accessibilities.Private | Accessibilities.Internal
-                                                                                            | Accessibilities.Protected | Accessibilities.ProtectedInternal, true);
+                                                                                            | Accessibilities.Protected | Accessibilities.ProtectedInternal);
                 gen.Generate(root);
             }
 
